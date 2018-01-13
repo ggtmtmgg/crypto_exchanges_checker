@@ -2,11 +2,18 @@
   "manifest_version": 2,
   "name": "取引所チェッカー",
   "version": "1.0",
-  "description": "URLが公式取引所のものと一致しているかをチェックします。フィッシング詐欺対策です。",
+  "description": "フィッシング詐欺疑惑のある取引所にアクセスをした場合にアラートを出す拡張機能です。",
   "browser_action": {
     "default_icon": "icon.png"
   },
+  "background" : {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
   "permissions": [
+    "tabs"
   ],
   "icons" : {
     "128": "icon.png"
