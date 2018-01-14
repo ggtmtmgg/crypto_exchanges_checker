@@ -1,5 +1,7 @@
 // var blacklist = [''];
-var blacklist = ['www.binance.com']; // TODO: replace real blacklist
+var blacklist = [
+  'xn--inance-hrb.com', 'binance.auction', 'binanceus.com'
+];
 
 function hostname(url) {
   var hostname;
